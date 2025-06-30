@@ -45,10 +45,7 @@ button{
   
 }
 
-a{
-    color: 	#FBC02D;
-    text-decoration: none;
-}
+
 
 p{
     color: #FFFFFF;
@@ -141,14 +138,43 @@ button:hover{
 }
 
 
-a:hover{
-    color: 	#d01414;
-text-decoration: none;
-  font-weight: bolder;
-  font-size: 24px;
-}
 
 
 .topicon{
     background-color:  #484747;
+}
+
+a:link{
+    color: #ab7a00;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #d01414;
+    text-decoration:underline;
+    font-weight: bolder;
+    font-size: 14px;
+}
+
+
+a:visited{
+    color:#9d6a4e;
+}
+
+a:active{
+    color: #fff700;
+}
+
+li{
+    margin: 13px;
+    list-style: inside;
+}
+
+
+.logo{
+    width: 97%;
+    height: 180px;
+    display: block; 
+    margin-top: -6px;
+     margin-bottom: -8px;
 }
