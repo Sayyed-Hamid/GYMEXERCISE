@@ -9,7 +9,9 @@ body {
 ::placeholder {
     color: #646c6f;
 }
-
+input{
+    width: 40%;
+}
 hr{
     margin: 8px auto;
 }
