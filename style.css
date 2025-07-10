@@ -1,218 +1,220 @@
-
-  
-body{
-    background-color: #1E1E1E;
-    background-color: #3f3d3d86;
-    font-family: 'Courier New', Courier, monospace;
+/* ========== GLOBAL ========== */
+body {
+    background-color: #14151f;
+    font-family: 'Space Grotesk';
     margin: 0;
     padding: 0;
-  
 }
 
-h2,h4{
-text-align: center;
-color: #00BFA6;
-font-weight: bold;
-font-family: 'Courier New', Courier, monospace;
-font-size: x-large;
-font-weight: bold;
-}
-
-.form{
-    /* background-color:#2C2C2C ; */
-    padding: 20px;
-   border-radius: 0px;
-color: #FFFFFF;
-margin: auto  ;
-  width: 40%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top: 170px;
-}
-
-input , label , fieldset  , select    {
-    background-color: #333333;
-    color: #FFFFFF;
-    border-radius: 8px;
-
-    
-}
-
-::placeholder{
+::placeholder {
     color: #646c6f;
-    
 }
 
-
-button{
-    background-color: #FF4C29;
-    color: #FFFFFF;
-    padding: 9px;
-    margin: 10px;;
-    border-color: #FF4C29;
-    border-radius: 8px;
-  
+hr{
+    margin: 8px auto;
 }
-
-
-
-p{
-    color: #FFFFFF;
-   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-.wgoal{
-    text-align: center;
-    font-weight: bold;
-}
-
-     
-
-h3{
-    text-align: center;
-color:	#4FC3F7;
-font-weight: bold;
-font-family: 'Courier New', Courier, monospace;
-font-size: x-large;
-
-}
-
-li{
-    color: 	#B0BEC5;
-}
-
-.bugp{
-     color: #FFFFFF;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
-}
-
-
-h1{
+/* ========== TYPOGRAPHY ========== */
+h1 {
     color: #d94123;
     text-align: center;
-font-weight: bold;
-font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-font-size: x-large;
-font-weight: bolder;
-font-size: 33px;
-
+    font-weight: bolder;
+    font-size: 33px;
 }
 
-legend{
-    color:	#B0BEC5;
+h2, h4 {
+    text-align: center;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+h3 {
+    text-align: center;
+    color: #d71921;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+form h3 {
+    text-align: left;
+    color: #d71921;
+}
+
+legend {
+    color: #d13e32;
     font-weight: bolder;
     font-size: 20px;
 }
 
-.workoutimg{
- 
-   
-   display: flex;
-   justify-content: center;
-   align-items: center;
+p, .bugp {
+    color: #FFFFFF;
+    padding:  14px ;
+    
+
 }
 
-button:hover{
-    background-color:	#FBC02D;
-    border-color: 	#FBC02D;
-    color: #6c0a0a;
-   font-weight: bolder;
- padding: 10px;
-   
-}
-
-
-
-
-
-.timetable1{
+.wgoal {
     text-align: center;
-    display: grid ;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 15px;
-
+    font-weight: bold;
 }
 
-.day {
-  padding: 10px;
-  background: #222;
-  color: white;
-  border-radius: 10px;
+/* ========== FORM & INPUTS ========== */
+.form {
+    padding: 170px 20px 20px 20px;
+    border-radius: 0px;
+    color: #FFFFFF;
+    margin: auto;
+    width: 60%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.day:hover{
-    background-color: #000000;
-     padding: 15px;
+input, label, fieldset, select {
+    background-color: #020202;
+    color: #FFFFFF;
+    border-radius: 8px;
+    text-align: left;
 }
 
-
-
-
-.topicon{
-    background-color:  #484747;
+.fieldset-pad {
+    padding-top: 25px;
 }
 
-a:link{
-    color: #ab7a00;
-    text-decoration: none;
+/* ========== BUTTONS ========== */
+button {
+    background-color: #ff4d2900;
+    color: #d71921;
+    padding: 9px;
+    margin: 10px;
+    border: 2px solid #d71921;
+    border-radius: 8px;
 }
 
-a:hover{
-    color: #d01414;
-    text-decoration:underline;
+button:hover {
+    background-color: #d71921;
+    border-color: #d71921;
+    color: #ffffff;
     font-weight: bolder;
-    font-size: 14px;
+    padding: 10px;
 }
 
-
-a:visited{
-    color:#9d6a4e;
+/* ========== IMAGES ========== */
+.workoutimg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-a:active{
-    color: #fff700;
-}
-
-li{
-    margin: 33px;
-    list-style: inside;
-}
-
-
-.navbar{
-    width: 100%;
-    height: 11%;
-    background-color:#E1E5EA;
-    top: 0px;
-    z-index: 1000;
-    position: fixed;
-    box-shadow: 0px 15px 12px 2px rgb(99, 98, 98);
-    -webkit-box-shadow: 0px 10px 22px 2px rgb(76, 74, 74);
-    -moz-box-shadow: 0px 15px 22px 2px rgb(53, 53, 53);
-  
-}
-
-.navimg{
+.navimg {
     width: 19px;
-    
-    
 }
-.navbar p{
+
+/* ========== NAVIGATION ========== */
+.navbar {
+    width: 100%;
+    height: 12%;
+    background-color: #14151f;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0px 10px 12px 2px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0px 5px 22px 2px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0px 15px 22px 2px rgba(0, 0, 0, 0.5);
+}
+
+.navbar h1 {
+    display: block;
+    padding: 12px;
+    text-align: center;
+    margin: 0 auto;
+    color: #D71921;
+}
+
+.navbar p {
     display: inline-block;
     padding: 0 12px 15px 12px;
     font-size: 12px;
     color: #AEABB1;
     font-weight: bold;
-   
 }
 
-.navbar h1{
-    display: block;
-    padding: 12px;
+/* ========== LINKS ========== */
+a:link {
+    color: #ffffff;
+    text-decoration: none;
+    padding-left: 10px;
+}
+
+a:hover {
+    color:  #D71921;
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 15px;
+}
+
+.timetable1 a:hover {
+    color: #060404;
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 15px;
+}
+
+.timetable1 a {
+  color: #ffffff;
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 15px;
+}  
+
+
+a:visited {
+     color: #B0BEC5;
+}
+
+
+a:active {
+    color: #fdf500;
+}
+
+/* ========== LISTS ========== */
+li {
+    margin: 33px;
+    color: #B0BEC5;
+    list-style: inside;
+}
+
+/* ========== TIMETABLE ========== */
+.timetable1 {
     text-align: center;
-    margin: 0 auto;
-    color:#D71921;
-   
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 17px;
+    padding: 12px;
+}
+
+.day {
+    padding: 10px;
+  background-color: #000000;
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.day:hover {
+    background-color: #d71921;
+    padding: 11px;
+}
+
+/* ========== MISC ========== */
+.navbar p{
+ color: #ffffff;
+}
+
+
+
+@font-face {
+    font-family: 'Space Grotesk';
+    src: url(/MEDIA/font/SpaceGrotesk-Variable.ttf);
 }
