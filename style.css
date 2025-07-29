@@ -71,7 +71,7 @@ p, .bugp {
     color: #FFFFFF;
     margin: auto;
     width: 80%;
-    height: 80vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -229,9 +229,9 @@ li {
 .hero{
     height:100vh;
     text-align: center;
-    font-family: sans-serif;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
     margin: 0px;
-    background: linear-gradient(to top , #56120f, #14151f 60% );
+    background: linear-gradient(to bottom , #b5cacb,#464b7a , #14151f  );
   
 
 }
@@ -241,6 +241,7 @@ li {
     padding: 3.6em 0 0 0 ;
     font-size: 3.5rem;
     color: #d71912;
+    text-shadow: 5.3px 6px 4.5px rgba(53, 35, 35, 0.75);
 }
 
 
@@ -248,9 +249,22 @@ li {
     display: block;
     color:white;
     margin: 20px 0 0 0 ;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
  .hero button{
+    margin: 6em 1.5em 0 1.5em ;
+    width: 120px;
+    height: 50px; 
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #d71912;
+    border: 2px solid white;
+    
+ }
+
+
+  .hero button:hover{
     margin: 6em 1.5em 0 1.5em ;
     width: 120px;
     height: 50px; 
@@ -261,6 +275,11 @@ li {
     
  }
 
+
+ .workoutgoal111{
+    padding: 100px 0 0 0  ;
+    
+ }
 @font-face {
     font-family: 'Space Grotesk';
     src: url(/MEDIA/font/SpaceGrotesk-Variable.ttf);
