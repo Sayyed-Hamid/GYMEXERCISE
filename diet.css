@@ -2,11 +2,19 @@
     color:#F5F5F5;
     margin: 0 0 0 30px ;
     font-weight: 800;
+    font-size: 1.6em
  }
 
 
+ span{
+    color:#F5F5F5;
+    margin: 0 0 0 20px ;
+    font-weight: 800;
+    font-size: 1.1em
+ }
+
  .diet-goals{
-   height: 100vh;
+   height: 80vh;
    width: 90vw;
  }
 
@@ -16,6 +24,17 @@
     padding: 20px 0 60px 0 ;
  }
 
-.diet-goals:first-child-of-type{
-   padding: 70px;
+.diet-goals h1{
+   padding: 50px 0 80px 0 ;
+}
+
+
+.build-muscle-diet h4{
+   text-align: left;
+   margin: 0 40px;
+}
+
+
+.build-muscle-diet h3{
+   margin: 50px 0;
 }
