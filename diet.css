@@ -1,0 +1,21 @@
+ .diet-goals span{
+    color:#F5F5F5;
+    margin: 0 0 0 30px ;
+    font-weight: 800;
+ }
+
+
+ .diet-goals{
+   height: 100vh;
+   width: 90vw;
+ }
+
+ .diet-goals p{
+   text-indent: 30px;
+    margin: auto 36px ;
+    padding: 20px 0 60px 0 ;
+ }
+
+.diet-goals:first-child-of-type{
+   padding: 70px;
+}

@@ -1,4 +1,6 @@
-/* ========== GLOBAL ========== */
+/* ===========================================
+   GLOBAL STYLES
+=========================================== */
 body {
     background-color: #000000;
     font-family: 'Space Grotesk';
@@ -9,27 +11,50 @@ body {
 ::placeholder {
     color: #646c6f;
 }
-input{
+
+hr {
+    margin: 8px auto;
+}
+
+input {
     width: 28%;
     border-radius: 5px;
     background-color: #14151f;
-    color: #FFFFFF;
+    color: 	#F5F5F5;
     text-align: left;
 }
-hr{
-    margin: 8px auto;
+
+/* ===========================================
+   CUSTOM FONTS
+=========================================== */
+@font-face {
+    font-family: 'Space Grotesk';
+    src: url(MEDIA/font/SpaceGrotesk-Variable.ttf);
 }
-/* ========== TYPOGRAPHY ========== */
+
+@font-face {
+    font-family: 'silkscreen';
+    src: url(MEDIA/font/Silkscreen-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'bitcount';
+    src: url(MEDIA/font/BitcountGridSingle-Regular.ttf);
+}
+
+/* ===========================================
+   TYPOGRAPHY
+=========================================== */
 h1 {
-    color: #d94123;
+    color: #d71921;
     text-align: center;
     font-weight: bolder;
-    font-size: 33px;
+    font-size: 2.2em;
 }
 
 h2, h4 {
     text-align: center;
-    color: #ffffff;
+    color: 	#F5F5F5;
     font-weight: bold;
     font-size: x-large;
 }
@@ -53,10 +78,8 @@ legend {
 }
 
 p, .bugp {
-    color: #FFFFFF;
-    padding:  14px ;
-    
-
+    color: #979797;
+    padding: 14px;
 }
 
 .wgoal {
@@ -64,22 +87,22 @@ p, .bugp {
     font-weight: bold;
 }
 
-/* ========== FORM & INPUTS ========== */
+/* ===========================================
+   FORM & INPUTS
+=========================================== */
 .form {
-    padding: -20px 20px 20px 20px;
-    border-radius: 0px;
-    color: #FFFFFF;
+    /* padding: 0 20px; */
+    border-radius: 0;
+    color: 	#F5F5F5;
     margin: auto;
     width: 80%;
     height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    
 }
 
 label, fieldset, select {
     background-color: #14151f;
-    color: #FFFFFF;
+    color: 	#F5F5F5;
     border-radius: 8px;
     text-align: left;
 }
@@ -88,7 +111,9 @@ label, fieldset, select {
     padding-top: 25px;
 }
 
-/* ========== BUTTONS ========== */
+/* ===========================================
+   BUTTONS
+=========================================== */
 button {
     background-color: #14151f;
     color: #d71921;
@@ -96,28 +121,66 @@ button {
     margin: 10px;
     border: 2px solid #d71921;
     border-radius: 8px;
+    transition: all 0.3s ease;
 }
 
 button:hover {
     background-color: #d71921;
-    border-color: #d71921;
-    color: #ffffff;
+    color: 	#F5F5F5;
     font-weight: bolder;
     padding: 10px;
 }
 
-/* ========== IMAGES ========== */
-.workoutimg {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+/* HERO SECTION BUTTON OVERRIDES */
+.hero button {
+    margin: 6em 1.5em 0 1.5em;
+    width: 120px;
+    height: 50px;
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #d71912;
+    border: 2px solid white;
+    animation: fade 0.8s ease-in;
+    font-family: 'bitcount', sans-serif;
+    letter-spacing: 2px;
 }
 
-.navimg {
-    width: 19px;
+.hero button:hover {
+    color: white;
 }
 
-/* ========== NAVIGATION ========== */
+/* ===========================================
+   HERO SECTION
+=========================================== */
+.hero {
+    height: 100vh;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    background: linear-gradient(to bottom, #b5cacb, #464b7a, #14151f);
+}
+
+.hero h1 {
+    margin: 0;
+    padding: 3.6em 0 0 0;
+    font-size: 3.5rem;
+    color: #d71912;
+    text-shadow: 3.5px 4px 1.8px rgba(53, 35, 35, 2);
+    animation: fade 1s ease-in;
+    font-family: 'bitcount', sans-serif;
+    letter-spacing: 4.5px;
+}
+
+.hero-span {
+    display: block;
+    color: white;
+    margin: 20px 0 0 0;
+    font-family: 'silkscreen', sans-serif;
+}
+
+/* ===========================================
+   NAVIGATION
+=========================================== */
 .navbar {
     width: 100%;
     height: 11%;
@@ -126,8 +189,10 @@ button:hover {
     top: 0;
     z-index: 1000;
     box-shadow: 0px 7px 12px 1px rgba(81, 78, 78, 0.3);
-    -webkit-box-shadow: 0px 5px 22px 1px rgba(81, 78, 78, 0.3);
-    -moz-box-shadow: 0px 7px 22px 1px rgba(81, 78, 78, 0.3);
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    margin:0;
 }
 
 .navbar h1 {
@@ -142,19 +207,36 @@ button:hover {
     display: inline-block;
     padding: 0 12px 15px 12px;
     font-size: 12px;
-    color: #AEABB1;
+    color: 	#F5F5F5;
     font-weight: bold;
 }
 
-/* ========== LINKS ========== */
+/* ===========================================
+   LINKS
+=========================================== */
 a:link {
-    color: #ffffff;
+    color: 	#F5F5F5;
     text-decoration: none;
     padding-left: 10px;
 }
 
 a:hover {
-    color:  #D71921;
+    color: #D71921;
+    font-weight: bolder;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #B0BEC5;
+}
+
+a:active {
+    color: #fdf500;
+}
+
+.timetable1 a {
+    color: 	#F5F5F5;
     text-decoration: none;
     font-weight: bolder;
     font-size: 15px;
@@ -162,37 +244,11 @@ a:hover {
 
 .timetable1 a:hover {
     color: #060404;
-    text-decoration: none;
-    font-weight: bolder;
-    font-size: 15px;
 }
 
-.timetable1 a {
-  color: #ffffff;
-    text-decoration: none;
-    font-weight: bolder;
-    font-size: 15px;
-}  
-
-
-a:visited {
-     color: #B0BEC5;
-}
-
-
-a:active {
-    color: #fdf500;
-}
-
-/* ========== LISTS ========== */
-li {
-    margin: 33px;
-    color: #d71912;
-    font-size: 1.2em;
-    list-style: inside;
-}
-
-/* ========== TIMETABLE ========== */
+/* ===========================================
+   TIMETABLE
+=========================================== */
 .timetable1 {
     text-align: center;
     display: grid;
@@ -203,7 +259,7 @@ li {
 
 .day {
     padding: 10px;
-  background-color:  #14151f;
+    background-color: #14151f;
     color: white;
     border-radius: 10px;
     margin-bottom: 10px;
@@ -214,98 +270,46 @@ li {
     padding: 11px;
 }
 
-/* ========== MISC ========== */
-.navbar p{
- color: #ffffff;
+/* ===========================================
+   IMAGES
+=========================================== */
+
+.navimg {
+    width: 19px;
 }
 
+/* ===========================================
+   LISTS
+=========================================== */
+li {
+    margin: 33px;
+    color: #d71912;
+    font-size: 1.2em;
+    list-style: inside;
+}
 
-.BMI{
+/* ===========================================
+   MISC
+=========================================== */
+.BMI {
     width: 99%;
     height: 50vh;
-
 }
 
-.hero{
-    height:100vh;
-    text-align: center;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    margin: 0px;
-    background: linear-gradient(to bottom , #b5cacb,#464b7a , #14151f  );
-   
-  
-
+.workoutgoal111 {
+    padding: 100px 0 0 0;
 }
 
-.hero h1{
-    margin: 0 0 0 0;
-    padding: 3.6em 0 0 0 ;
-    font-size: 3.5rem;
-    color: #d71912;
-    text-shadow: 3.5px 4px 1.8px rgba(53, 35, 35, 2);
-    animation: fade 1s ease-in;
-    font-family: 'bitcount', sans-serif;
-    letter-spacing: 4.5px;
-}
-
-
-.hero-span{
-    display: block;
-    color:white;
-    margin: 20px 0 0 0 ;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-family: 'silkscreen', sans-serif;
-}
-
- .hero button{
-    margin: 6em 1.5em 0 1.5em ;
-    width: 120px;
-    height: 50px; 
-    font-size: 1.1em;
-    font-weight: 600;
-    color: #d71912;
-    border: 2px solid white;
-    animation: fade 0.8s ease-in;
-    font-family: 'bitcount', sans-serif;
-    letter-spacing: 2px;
-    
- }
-
-
-  .hero button:hover{
-    margin: 6em 1.5em 0 1.5em ;
-    width: 120px;
-    height: 50px; 
-    font-size: 1.1em;
-    font-weight: 600;
-    color: white;
-    border: 2px solid white;
-    
- }
-
-
- .workoutgoal111{
-    padding: 100px 0 0 0  ;
-    
- }
-@font-face {
-    font-family: 'Space Grotesk';
-    src: url(MEDIA/font/SpaceGrotesk-Variable.ttf);
-}
-
-
+/* ===========================================
+   ANIMATIONS
+=========================================== */
 @keyframes fade {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-  
-
-@font-face {
-    font-family: 'silkscreen';
-    src: url(MEDIA/font/Silkscreen-Regular.ttf);
-}
-
-@font-face {
-    font-family: 'bitcount';
-    src: url(MEDIA/font/BitcountGridSingle-Regular.ttf);
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
