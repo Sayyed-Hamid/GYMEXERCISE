@@ -232,6 +232,7 @@ li {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     margin: 0px;
     background: linear-gradient(to bottom , #b5cacb,#464b7a , #14151f  );
+   
   
 
 }
@@ -241,7 +242,10 @@ li {
     padding: 3.6em 0 0 0 ;
     font-size: 3.5rem;
     color: #d71912;
-    text-shadow: 5.3px 6px 4.5px rgba(53, 35, 35, 0.75);
+    text-shadow: 3.5px 4px 1.8px rgba(53, 35, 35, 2);
+    animation: fade 1s ease-in;
+    font-family: 'bitcount', sans-serif;
+    letter-spacing: 4.5px;
 }
 
 
@@ -250,6 +254,7 @@ li {
     color:white;
     margin: 20px 0 0 0 ;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'silkscreen', sans-serif;
 }
 
  .hero button{
@@ -260,6 +265,9 @@ li {
     font-weight: 600;
     color: #d71912;
     border: 2px solid white;
+    animation: fade 0.8s ease-in;
+    font-family: 'bitcount', sans-serif;
+    letter-spacing: 2px;
     
  }
 
@@ -282,5 +290,22 @@ li {
  }
 @font-face {
     font-family: 'Space Grotesk';
-    src: url(/MEDIA/font/SpaceGrotesk-Variable.ttf);
+    src: url(MEDIA/font/SpaceGrotesk-Variable.ttf);
+}
+
+
+@keyframes fade {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+  
+
+@font-face {
+    font-family: 'silkscreen';
+    src: url(MEDIA/font/Silkscreen-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'bitcount';
+    src: url(MEDIA/font/BitcountGridSingle-Regular.ttf);
 }
